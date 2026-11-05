@@ -2,7 +2,7 @@
 ###############################  BUILD CONFIGURATION  ##############################################
 ####################################################################################################
 [build-system]
-requires = ["setuptools>=80", "setuptools-scm>=8,<10"]
+requires = ["setuptools>=84.2.1", "setuptools-scm>=8,<10"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
@@ -37,7 +37,7 @@ dependencies = [
     "numpy",
     "nvidia-ml-py>=12",
     "packaging",
-    "setuptools>=80",   # torch.utils.cpp_extension imports setuptools at load time
+    "setuptools>=84.2.1",   # torch.utils.cpp_extension imports setuptools at load time
     "torch>=2.6",
     "tqdm",
     # modelopt.torch
@@ -58,7 +58,7 @@ onnx = [
     "lief",
     "ml_dtypes",
     "onnx-graphsurgeon",
-    "onnx~=1.19.0",
+    "onnx~=1.23.2",
     "onnxconverter-common~=1.16.0",
     # ORT for Windows
     "onnxruntime-gpu==1.22.0; platform_system == 'Windows'",
